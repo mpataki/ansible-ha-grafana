@@ -8,7 +8,7 @@
 
 - name: grafana config
   copy:
-    src: role/grafana/files/grafana.ini
+    src: files/grafana.ini
     dest: /etc/grafana.ini
     owner: root
     group: grafana
