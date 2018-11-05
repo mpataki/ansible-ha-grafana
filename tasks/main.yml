@@ -1,0 +1,24 @@
+---
+
+- name: grafana package
+  apt:
+    name: grafana
+    state: present
+  become: true
+
+- name: grafana config
+  copy:
+    src: role/grafana/files/grafana.ini
+    dest: /etc/grafana.ini
+    owner: root
+    group: grafana
+  become: true
+  notify:
+    - restart grafana
+
+- name: grafana service
+  service:
+    name: grafana-server
+    state: started
+    enabled: true
+  become: true
