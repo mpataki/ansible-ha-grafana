@@ -1,5 +1,5 @@
 galaxy_info:
-  role_name: ha-grafana
+  role_name: ha_grafana
   author: Mat Pataki
   description: 'grafana setup for home assistant'
   company: 'n/a'
@@ -15,4 +15,4 @@ galaxy_info:
     - homeassistant
 
 dependencies:
-  - role: mpataki.ha-influxdb
+  - role: mpataki.ha_influxdb
