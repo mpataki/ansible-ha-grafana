@@ -1,5 +1,7 @@
 # ansible-grafana
 
+[![Build Status](https://travis-ci.org/mpataki/ansible-ha-grafana.svg?branch=master)](https://travis-ci.org/mpataki/ansible-ha-grafana)
+
 [Grafana](https://grafana.com/) is a dashboard/metric visualization tool for time series data like that collected by home home assistant. This ansible role installs and configures grafana to pull data from [InfluxDB](https://www.influxdata.com/).
 
 This can be installed via ansible galaxy or git.
